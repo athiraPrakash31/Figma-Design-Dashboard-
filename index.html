@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidenav">
+            <div class="dash">
+                <div class="dashboard">
+                    <div class="logo">
+                        <img src="./Images/grain.svg" alt="" />
+                        <h1>E-Dashboard</h1>
+                    </div>
+                    <div class="menu-open">
+                        <button id="menu-button" onclick="openNav()">
+                            <img src="./Images/menu_open.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+                <div id="desktop-nav">
+                    <div class="company-detail">
+                        <span id="letter">A</span>
+                        <select name="" id="">
+                            <option value="">Alphalinx inc.</option>
+                        </select>
+                    </div>
+                    <div class="menu-list">
+                        <div class="company-menu">
+                            <ul type="none">
+                                <li>
+                                    <button>
+                                        <img src="./Images/widgets.svg" alt="widget" />Dashboard
+                                    </button>
+                                </li>
+                                <li>
+                                    <div class="buissness-select">
+                                        <img id="buissness-icon" src="./Images/business.svg" alt=" business" />
+                                        <select name="" id="">
+                                            <option value="">My Business</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="financial-select">
+                                        <img id="financial-icon" src="./Images/financial-image.svg" alt="financial" />
+                                        <select name="" id="">
+                                            <option value="">Financial Resources</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button>
+                                        <img src="./Images/mailbox.svg" alt="mail" />Mailbox
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <img src="./Images/visa-card.svg" alt="visa" />Visa Center
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <img src="./Images/quiz.svg" alt="compilance" />Compliance <span
+                                            id="nav-number">02</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dashend -->
+            <div class="user-details">
+                <ul type="none">
+                    <li>
+                        <button>
+                            <img src="./Images/notifications.svg" alt="" />Notifications
+                        </button>
+                    </li>
+
+                    <li>
+                        <button id="expand">
+                            <img src="./Images/help.svg" alt="" />Help Center
+                            <img id="expand-icon" src="./Images/expand_more.svg" alt="" />
+                        </button>
+                    </li>
+
+                    <li>
+                        <button>
+                            <span id="letter-end">J</span>
+                            <div class="loggedin-user">
+                                <p>Jacobe James</p>
+                                <p id="email-user">Jacobejames@gmail.com <img width="20px" height="20px"
+                                        src="./Images/expand_more.svg" alt="" />
+                                </p>
+
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="greeting">
+            <div class="greeting-part">
+                <h1>Good morning, <span id="users-name">Emily!</span> &nbsp; 👋</h1>
+                <div id="welcome-msg">Welcome back!</div>
+            </div>
+
+            <div class="document-note">
+                <img src="./Images/Documents note.svg" alt="document-note">
+            </div>
+
+
+
+            <!-- donut pie chart -->
+            <div class="donut-piechart">
+                <div id="doughnut-chart-text">
+                    <span id="number">21</span> <br />
+                    Applications
+                </div>
+                <canvas height="156px" width="157px" id="myDonutChart"></canvas>
+            </div>
+
+            <!-- mailbox -->
+            <div class="mailbox">
+                <div class="row">
+                    <div class="section-name">
+                        <h2>Mailbox</h2>
+                        <a href="">view all</a>
+                    </div>
+                    <p>Check on your all your mail in one go.</p>
+                    <div class="mail-status">
+                        <div class="status">
+                            <img src="./Images/tick.svg" alt="tick" />
+                            <div class="status-name">New</div>
+                            <div class="number-mail">23</div>
+                        </div>
+                        <hr>
+
+                        <div class="status">
+                            <img src="./Images/threedot.svg" alt="dot" />
+                            <div class="status-name">Requested</div>
+                            <div class="number-mail">23</div>
+                        </div>
+                        <hr>
+
+                        <div class="status">
+                            <img src="./Images/bell.svg" alt="bell" />
+                            <div class="status-name">Actions taken</div>
+                            <div class="number-mail">23</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="section-name">
+                        <h2>Legal compliance</h2>
+                        <a href="">view all</a>
+                    </div>
+                    <p>Keep your requirements up to date.</p>
+                    <div class="mail-status">
+                        <div class="status">
+                            <img src="./Images/tick.svg" alt="tick" />
+                            <div class="status-name">Reminders</div>
+                            <div class="number-mail">23</div>
+                        </div>
+                        <hr>
+                        <div class="status">
+                            <img src="./Images/threedot.svg" alt="dot" />
+                            <div class="status-name">In progress</div>
+                            <div class="number-mail">23</div>
+                        </div>
+                        <hr>
+                        <div class="status">
+                            <img src="./Images/bell.svg" alt="bell" />
+                            <div class="status-name">To approve</div>
+                            <div class="number-mail">23</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tasks">
+            <!-- task table -->
+            <div class="section-name">
+                <h2>Tasks</h2>
+                <a href="">view all</a>
+            </div>
+
+            <div class="task-labels">
+                <button>My tasks</button>
+                <button>Overdue</button>
+                <button>Assigned by me</button>
+                
+            </div>
+                       
+           
+
+
+<!-- table 1 -->
+
+
+            <div class="mytasks-table">
+                <table id="mytasks">
+                    <thead>
+
+                        <tr>
+                            <th>Task</th>
+                            <th>Category</th>
+                            <th>Due date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <!-- row 1 -->
+                     <tbody>
+
+                         <tr>
+                             <td>Update Tax Document for Alphalinx...</td>
+                             <td>Compliance</td>
+                             <td>23/11/23</td>
+                             <td>
+                                 <button>Request sent</button>
+                             </td>
+                         </tr>
+     
+                         <!-- row 2 -->
+                         <tr>
+                             <td>Update KYC document</td>
+                             <td>Compliance</td>
+                             <td>23/11/23</td>
+                             <td>
+                                 <button>Request sent</button>
+                             </td>
+                         </tr>
+                         <!-- row 3 -->
+                         <tr>
+                             <td>Add clearer photo for visa application</td>
+                             <td>Visa center</td>
+                             <td>23/11/23</td>
+                             <td>
+                                 <button>Pending action</button>
+                             </td>
+                         </tr>
+                         <!-- row 4 -->
+                         <tr>
+                             <td>Document not clear: please add new file</td>
+                             <td>Visa center</td>
+                             <td>23/11/23</td>
+                             <td>
+                                 <button>Pending action</button>
+                             </td>
+                         </tr>
+                     </tbody>
+                </table>
+            </div>
+
+            <div class="payment-history">
+                <div class="section-name">
+                    <h2>Payment history</h2>
+                    <a href="">view all</a>
+                </div>
+                <div class="payment-table">
+                    <table id="payhistory">
+                        <thead>
+
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Date of transaction</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <!-- row 1 -->
+                         <tbody>
+
+                             <tr>
+                                 <td class="transaction-id">#764657758</td>
+                                 <td>23/01/19</td>
+                                 <td>
+                                     $5.99
+                                     <button class="toggle-description">&#9662;</button>
+                                 </td>
+                                 <td class="description">Mailbox</td>
+                             </tr>
+                             <!-- row 2 -->
+                             <tr>
+                                 <td class="transaction-id">#764657758</td>
+                                 <td>22/01/19</td>
+                                 <td>
+                                     $99
+                                     <button class="toggle-description">&#9662;</button>
+                                 </td>
+                                 <td class="description">Registration (upgrade)</td>
+                             </tr>
+                             <!-- row 3 -->
+                             <tr>
+                                 <td class="transaction-id">#764657758</td>
+                                 <td>21/01/19</td>
+                                 <td>
+                                     $5.99
+                                     <button class="toggle-description">&#9662;</button>
+                                 </td>
+                                 <td class="description">Mailbox</td>
+                             </tr>
+                             <!-- row 4 -->
+                             <tr>
+                                 <td class="transaction-id">#764657758</td>
+                                 <td>19/01/19</td>
+                                 <td>
+                                     $5.99
+                                     <button class="toggle-description">&#9662;</button>
+                                 </td>
+                                 <td class="description">Mailbox</td>
+                             </tr>
+                             <!-- row 5 -->
+                             <tr>
+                                 <td class="transaction-id">#764657758</td>
+                                 <td>09/01/19</td>
+                                 <td>
+                                     $5.99
+                                     <button class="toggle-description">&#9662;</button>
+                                 </td>
+                                 <td class="description">Mailbox</td>
+                             </tr>
+                             <!-- row 6 -->
+                             <tr>
+                                 <td class="transaction-id">#764657758</td>
+                                 <td>23/12/18</td>
+                                 <td>
+                                     $5.99
+                                     <button class="toggle-description">&#9662;</button>
+                                 </td>
+                                 <td class="description">Mailbox</td>
+                             </tr>
+                         </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>
